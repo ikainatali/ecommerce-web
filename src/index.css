@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.925rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav .navbar-brand {
+  font-family: "Sacramento", cursive !important;
+  font-weight: 800;
+  font-size: xx-large;
+  color: #2d3436 !important;
 }
+
+nav ul li a {
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: #2d3436 !important;
+}
+
+nav ul li a:hover {
+  color: #d35400 !important;
+}
+
+.card-hearder {
+  border: none !important;
+  outline: 1px solid black;
+  outline-offset: -1rem;
+}
+
+.man {
+  background-image: url("../src/img/header/man.jpg");
+  height: 100% !important;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.woman {
+  background-image: url("../src/img/header/woman.jpg");
+  height: 100% !important;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  background-image: url("../src/img/header/home.jpg");
+  height: 100% !important;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accessories {
+  background-image: url("../src/img/header/accessories.jpg");
+  height: 100% !important;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn.btn-outline-dark {
+  background-color: #f5f6fa;
+  opacity: 0.9;
+  border-radius: 0 !important;
+  font-weight: 600 !important;
+}
+
+.input-group input,
+.input-group button {
+  border-radius: 0 !important;
+}
+
+.input-group input::-webkit-input-placeholder {
+  font-size: 80%;
+}
+
+.input-group input:-ms-input-placeholder {
+  font-size: 80%;
+}
+
+.input-group input::-ms-input-placeholder {
+  font-size: 80%;
+}
+
+.input-group input::placeholder {
+  font-size: 80%;
+}
+
+.bg-dark {
+  color: white;
+}
+
+.bg-dark .heading {
+  font-weight: 600;
+}
+
+.footer a i {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=index.css.map */

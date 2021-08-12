@@ -1,0 +1,111 @@
+@import "../src/styles/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@mixin uppercase {
+  text-transform: uppercase !important;
+}
+
+@mixin cardstyle {
+  height: 100% !important;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.925rem;
+  a {
+    text-decoration: none !important;
+    color: $grey;
+    background-color: none !important;
+  }
+}
+
+.navbar {
+  background-color: white !important;
+  //   border-bottom: 0.2px solid #f8f9fa;
+}
+
+nav {
+  .navbar-brand {
+    font-family: "Pacifico", cursive;
+    font-size: xx-large;
+    color: $grey;
+  }
+  ul li a {
+    @include uppercase();
+    text-decoration: none !important;
+    color: $grey;
+  }
+  ul li a:hover {
+    color: $brown;
+  }
+}
+
+.card-hearder {
+  border: none !important;
+  outline: 1px solid black;
+  outline-offset: -1rem;
+}
+
+.man {
+  background-image: url("../src/img/header/man.jpg");
+  @include cardstyle();
+}
+
+.woman {
+  background-image: url("../src/img/header/woman.jpg");
+  @include cardstyle();
+}
+
+.home {
+  background-image: url("../src/img/header/home.jpg");
+  @include cardstyle();
+}
+
+.accessories {
+  background-image: url("../src/img/header/accessories.jpg");
+  @include cardstyle();
+}
+
+.btn.btn-outline-dark {
+  background-color: #f5f6fa;
+  opacity: 0.9;
+  border-radius: 0 !important;
+  font-weight: 600 !important;
+}
+
+.input-group {
+  input,
+  button {
+    border-radius: 0 !important;
+  }
+  input::placeholder {
+    font-size: 80%;
+  }
+}
+
+.bg-dark {
+  color: white;
+  .heading {
+    font-weight: 600;
+  }
+}
+.footer a i {
+  font-size: 2rem;
+  color: $grey;
+}
+
+//===============Common Card Component===============//
+.card {
+  p .size {
+    border: 0.5px solid $grey;
+  }
+  p .size:hover {
+    color: white;
+    background-color: $brown;
+    cursor: pointer;
+  }
+}
