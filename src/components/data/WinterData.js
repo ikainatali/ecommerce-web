@@ -15,56 +15,67 @@ const winterData = [
     id: 1,
     img: img1,
     description: "Printed",
+    price: 10,
   },
   {
     id: 2,
     img: img2,
     description: "Printed",
+    price: 10,
   },
   {
     id: 3,
     img: img3,
     description: "Printed",
+    price: 15,
   },
   {
     id: 4,
     img: img4,
     description: "Printed",
+    price: 10,
   },
   {
     id: 5,
     img: img5,
     description: "Printed",
+    price: 12,
   },
   {
     id: 6,
     img: img6,
     description: "Printed",
+    price: 10,
   },
   {
     id: 7,
     img: img7,
     description: "Printed",
+    price: 10,
   },
   {
     id: 8,
     img: img8,
     description: "Printed",
+    price: 10,
   },
   {
     id: 9,
     img: img9,
     description: "Printed",
+    price: 10,
   },
   {
     id: 10,
     img: img10,
     description: "Printed",
+    price: 15,
   },
   {
     id: 11,
     img: img11,
     description: "Printed",
+    price: 10,
   },
 ];
 

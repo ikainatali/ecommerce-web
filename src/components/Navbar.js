@@ -2,6 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  let navBar = document.querySelectorAll(".nav-link");
+  let navCollapse = document.querySelector(".navbar-collapse.collapse");
+  navBar.forEach((a) => {
+    a.addEventListener("click", () => {
+      navCollapse.classList.remove("show");
+    });
+  });
   return (
     <>
       <nav className='navbar navbar-expand-lg fixed-top navbar-light shadow-sm p-3 mb-4 mb-3'>
@@ -23,76 +30,37 @@ const Navbar = () => {
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
               <li className='nav-item p-3'>
-                <NavLink to='/woman'>Woman</NavLink>
+                <NavLink to='/woman' className='nav-link'>
+                  Woman
+                </NavLink>
               </li>
               <li className='nav-item p-3'>
-                <NavLink to='/man'>Man</NavLink>
+                <NavLink to='/man' className='nav-link'>
+                  Man
+                </NavLink>
               </li>
               <li className='nav-item p-3'>
-                <NavLink to='/winter'>Winter</NavLink>
+                <NavLink to='/winter' className='nav-link'>
+                  Winter
+                </NavLink>
               </li>
               <li className='nav-item p-3'>
-                <NavLink to='/home'>Home</NavLink>
+                <NavLink to='/home' className='nav-link'>
+                  Home
+                </NavLink>
               </li>
               <li className='nav-item p-3'>
-                <NavLink to='/accessories'>Accessories</NavLink>
-              </li>
-              {/* <li className='nav-item dropdown p-2'>
-                <NavLink
-                  to='/accessories'
-                  className='nav-link dropdown-toggle'
-                  id='navbarDarkDropdownMenuLink'
-                  role='button'
-                  data-bs-toggle='dropdown'
-                  aria-expanded='false'
-                >
+                <NavLink to='/accessories' className='nav-link'>
                   Accessories
                 </NavLink>
-                <ul
-                  className='dropdown-menu dropdown-menu-dark'
-                  aria-labelledby='navbarDarkDropdownMenuLink'
-                >
-                  <div className='d-flex'>
-                    <li>
-                      <NavLink className='dropdown-item' to='/'>
-                        Bag
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink className='dropdown-item' to='/'>
-                        Clutch
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink className='dropdown-item' to='/'>
-                        Cup/Bottle
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink className='dropdown-item' to='/'>
-                        Mask
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink className='dropdown-item' to='/'>
-                        Stationary
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink className='dropdown-item' to='/'>
-                        Others
-                      </NavLink>
-                    </li>
-                  </div>
-                </ul>
-              </li> */}
+              </li>
               <li className='nav-item p-3'>
-                <NavLink to='/'>
+                <NavLink to='/' className='nav-link'>
                   <i className='fas fa-user'></i>
                 </NavLink>
               </li>
               <li className='nav-item p-3'>
-                <NavLink to='/cart'>
+                <NavLink to='/cart' className='nav-link'>
                   <i className='fas fa-shopping-bag'></i>
                 </NavLink>
               </li>

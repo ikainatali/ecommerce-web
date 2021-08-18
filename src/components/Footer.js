@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <section className='pt-5'>
+      <section className='pt-md-5'>
         <div className='container-fluid bg-dark'>
           <div className='row row-dark pt-5 pb-4'>
             <div className='col-4 text-center'>
@@ -32,10 +32,10 @@ const Footer = () => {
       <footer className='footer pt-5 pb-5'>
         <div className='container'>
           <div className='row'>
-            <div className='col-6 ps-5'>
+            <div className='col-md-6 ps-5'>
               <p>Copywrite &copy; 2021. All rights reserved</p>
             </div>
-            <div className='col-6 text-end pe-5'>
+            <div className='col-md-6 text-end pe-5'>
               <NavLink exact to='/' className='p-4'>
                 <i className='fab fa-facebook-f'></i>
               </NavLink>

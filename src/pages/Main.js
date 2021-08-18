@@ -1,8 +1,8 @@
 import React from "react";
 
 //components
-import Header from "./Header";
-import Discover from "./Discover";
+import Header from "../components/Header";
+import Discover from "../components/Discover";
 
 const Main = () => {
   return (

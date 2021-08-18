@@ -1,22 +1,23 @@
 import React from "react";
-import CommonCard from "./CommonCard";
-import winterData from "./data/WinterData";
+import CommonCard from "../components/CommonCard";
+import manData from "../components/data/ManData";
 
-const Winter = () => {
+const Man = () => {
   return (
     <>
       <div className='container pt-5'>
         <div className='row mt-5 pt-5'>
-          {winterData.map((data) => {
+          {manData.map((data) => {
             return (
-              <div className='col-4'>
+              <div className='col-md-4 col-10 offset-md-0 offset-1'>
                 <CommonCard
                   key={data.id}
+                  id={data.id}
                   img={data.img}
                   description={data.description}
                   price={data.price}
-                  link='/winter'
-                  category='winter'
+                  link='/man'
+                  category='man'
                 />
               </div>
             );
@@ -27,4 +28,4 @@ const Winter = () => {
   );
 };
 
-export default Winter;
+export default Man;

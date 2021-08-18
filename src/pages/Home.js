@@ -1,6 +1,6 @@
 import React from "react";
-import CommonCard from "./CommonCard";
-import homeData from "./data/HomeData";
+import CommonCard from "../components/CommonCard";
+import homeData from "../components/data/HomeData";
 
 const Home = () => {
   return (
@@ -9,9 +9,10 @@ const Home = () => {
         <div className='row mt-5 pt-5'>
           {homeData.map((data) => {
             return (
-              <div className='col-4'>
+              <div className='col-md-4 col-10 offset-md-0 offset-1'>
                 <CommonCard
                   key={data.id}
+                  id={data.id}
                   img={data.img}
                   description={data.description}
                   price={data.price}

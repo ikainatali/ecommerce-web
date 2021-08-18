@@ -1,5 +1,5 @@
 import React from "react";
-import CommonCard from "./CommonCard";
+import CommonCard from "../components/CommonCard";
 import {
   bag,
   clutch,
@@ -7,7 +7,7 @@ import {
   mask,
   stationary,
   others,
-} from "./data/AccessoriesData";
+} from "../components/data/AccessoriesData";
 
 const Accessories = () => {
   return (
@@ -17,9 +17,10 @@ const Accessories = () => {
           <h3>Bag</h3>
           {bag.map((data) => {
             return (
-              <div className='col-4'>
+              <div className='col-md-4 col-10 offset-md-0 offset-1'>
                 <CommonCard
                   key={data.id}
+                  id={data.id}
                   img={data.img}
                   price={data.price}
                   link='/accessories'
@@ -32,9 +33,10 @@ const Accessories = () => {
           <h3>Clutch</h3>
           {clutch.map((data) => {
             return (
-              <div className='col-4'>
+              <div className='col-md-4 col-10 offset-md-0 offset-1'>
                 <CommonCard
                   key={data.id}
+                  id={data.id}
                   img={data.img}
                   price={data.price}
                   link='/accessories'
@@ -47,9 +49,10 @@ const Accessories = () => {
           <h3>Cup Bottle</h3>
           {cupbottle.map((data) => {
             return (
-              <div className='col-4'>
+              <div className='col-md-4 col-10 offset-md-0 offset-1'>
                 <CommonCard
                   key={data.id}
+                  id={data.id}
                   img={data.img}
                   price={data.price}
                   link='/accessories'
@@ -62,9 +65,10 @@ const Accessories = () => {
           <h3>Mask</h3>
           {mask.map((data) => {
             return (
-              <div className='col-4'>
+              <div className='col-md-4 col-10 offset-md-0 offset-1'>
                 <CommonCard
                   key={data.id}
+                  id={data.id}
                   img={data.img}
                   price={data.price}
                   link='/accessories'
@@ -77,9 +81,10 @@ const Accessories = () => {
           <h3>Stationary</h3>
           {stationary.map((data) => {
             return (
-              <div className='col-4'>
+              <div className='col-md-4 col-10 offset-md-0 offset-1'>
                 <CommonCard
                   key={data.id}
+                  id={data.id}
                   img={data.img}
                   price={data.price}
                   link='/accessories'
@@ -92,7 +97,7 @@ const Accessories = () => {
           <h3>Others</h3>
           {others.map((data) => {
             return (
-              <div className='col-4'>
+              <div className='col-md-4 col-10 offset-md-0 offset-1'>
                 <CommonCard
                   key={data.id}
                   img={data.img}

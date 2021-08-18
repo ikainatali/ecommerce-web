@@ -21,6 +21,9 @@
     color: $grey;
     background-color: none !important;
   }
+  .btn {
+    border-radius: 0 !important;
+  }
 }
 
 .navbar {
@@ -53,21 +56,33 @@ nav {
 .man {
   background-image: url("../src/img/header/man.jpg");
   @include cardstyle();
+  .title {
+    font-weight: bold;
+  }
 }
 
 .woman {
   background-image: url("../src/img/header/woman.jpg");
   @include cardstyle();
+  .title {
+    font-weight: bold;
+  }
 }
 
 .home {
   background-image: url("../src/img/header/home.jpg");
   @include cardstyle();
+  .title {
+    font-weight: bold;
+  }
 }
 
 .accessories {
   background-image: url("../src/img/header/accessories.jpg");
   @include cardstyle();
+  .title {
+    font-weight: bold;
+  }
 }
 
 .btn.btn-outline-dark {
@@ -75,6 +90,12 @@ nav {
   opacity: 0.9;
   border-radius: 0 !important;
   font-weight: 600 !important;
+}
+
+.trending {
+  h6 a {
+    font-weight: bold;
+  }
 }
 
 .input-group {
@@ -107,5 +128,8 @@ nav {
     color: white;
     background-color: $brown;
     cursor: pointer;
+  }
+  .price {
+    font-weight: bold;
   }
 }
